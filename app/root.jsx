@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Layout from "./layouts/Layout";
 
 import styles from "./styles/css/index.css";
 
@@ -52,7 +53,7 @@ const App = () => {
         <Links />
       </head>
       <body className="body">
-        <Outlet />
+        <Layout />
         <Scripts />
         <ScrollRestoration />
         <LiveReload />

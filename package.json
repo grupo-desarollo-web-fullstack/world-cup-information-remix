@@ -3,7 +3,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
-    "dev": "concurrently -n \"sass,remix\" -c \"#ff4eff,blue\" \"npm run sass\" \"CHOKIDAR_USEPOLLING=true remix dev\"",
+    "dev": "concurrently -n \"sass,remix\" -c \"#ff4eff,blue\" \"npm run sass\" \"cross-env CHOKIDAR_USEPOLLING=true remix dev\"",
     "sass": "sass app/styles/scss:app/styles/css -w --poll"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "@remix-run/eslint-config": "^1.7.2",
     "@remix-run/serve": "^1.7.2",
     "concurrently": "^7.4.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.23.1",
     "sass": "^1.55.0"
   },
