@@ -1,0 +1,25 @@
+.list {
+  border-radius: var(--primary-border-radius);
+  border: 0.0625rem solid var(--primary-highlight-color);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__item {
+    border-bottom: 0.0625rem solid var(--primary-highlight-color);
+    padding: 0.5rem;
+    transition: background-color 0.25s;
+    &:hover {
+      background-color: var(--primary-theme-color);
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+
+.link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}

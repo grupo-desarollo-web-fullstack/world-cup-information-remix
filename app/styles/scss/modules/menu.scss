@@ -1,0 +1,99 @@
+.menu {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &--hamburger {
+    position: fixed;
+    top: 4rem;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--primary-theme-color);
+    transition: left 0.25s;
+    @media (min-width: 768px) {
+      position: static;
+      flex-direction: row;
+      gap: 1rem;
+      width: auto;
+      background-color: transparent;
+    }
+  }
+  
+  &__link {
+    position: relative;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-family: var(--primary-font-family);
+    text-decoration: none;
+    transition: color 0.25s;
+    &:hover,
+    &--active {
+      color: var(--primary-highlight-dark-color);
+      font-weight: bold;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.125rem;
+      width: 0;
+      height: 0.0625rem;
+      background-color: var(--secondary-highlight-color);
+      transition: width 0.25s ease-in-out;
+    }
+    &:hover::before,
+    &--active::before {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      color: var(--reverse-primary-text-color);
+      &:hover,
+      &--active {
+        color: var(--primary-highlight-color);
+      }
+    }
+  }
+  &__img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.25s;
+    &:hover {
+      transform: scale(1.125);
+    }
+    @media (min-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  
+  &-icon {
+    --transform-value: 0deg;
+    color: var(--reverse-primary-text-color);
+    font-size: 1.75rem;
+    display: flex;
+    transform: rotate(var(--transform-value));
+    transition: transform .25s;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    &--rotated {
+      --transform-value: 180deg;
+    }
+    @media (min-width: 768px) {
+      display: none;      
+    }
+  }
+  
+  &--hamburger-open {
+    left: 0;
+  }
+  
+}
