@@ -3,9 +3,8 @@
   --primary-theme-color: #eee;
   --secondary-theme-color: #D9D9D922;
   --primary-text-color: #000;
-  --secondary-text-color: #eee; 
+  --secondary-text-color: #eee;
   --reverse-primary-text-color: white;
-
   --primary-shadow-color: #8d1c3d;
   --secondary-shadow-color: #ffffff;
   --reverse-primary-shadow-color: #fff8;
@@ -14,15 +13,16 @@
   --secondary-highlight-color: #e1c396;
   --secondary-highlight-light-color: #e1c39644;
   --primary-button-color: #61dafb;
-
   --secondary-button-color: gold;
   --primary-invalid-color: crimson;
-  --primary-font-family: 'Inter', sans-serif;
+  --primary-font-family: "Inter", sans-serif;
   --padding-section: 1.5rem 0;
   --padding-container: 0 1rem;
   --max-width-container: 640px;
   --primary-border-radius: 0.5rem;
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+  :root {
     --padding-section: 2rem 0;
     --padding-container: 0 0.75rem;
     --max-width-container: 1024px;
@@ -35,3 +35,5 @@
   font-family: var(--primary-font-family);
   margin: 0;
 }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,17 @@
+/* Error: expected "{".
+ *    ,
+ * 77 | >>>>>>> 224e1a7e447be00d95179b686f45841fcc5a5d81
+ *    |                                                 ^
+ *    '
+ *   app\styles\scss\index.scss 77:49  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 77 \2502  >>>>>>> 224e1a7e447be00d95179b686f45841fcc5a5d81\a    \2502                                                  ^\a    \2575 \a   app\\styles\\scss\\index.scss 77:49  root stylesheet';
+}
