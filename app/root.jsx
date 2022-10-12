@@ -2,13 +2,13 @@ import {
   Links,
   LiveReload,
   Meta,
-  Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
 import Layout from "./layouts/Layout";
 
-import styles from "./styles/css/index.css";
+import stylesMain from "~/styles/css/index.css";
+import styles from "~/styles/css/Fe.css";
 
 export const meta = () => {
   return {
@@ -37,6 +37,10 @@ export const links = () => {
     {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;600;700;800&display=swap",
+    },
+    {
+      rel: "stylesheet",
+      href: stylesMain,
     },
     {
       rel: "stylesheet",
