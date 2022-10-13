@@ -7,7 +7,7 @@
     gap: 4rem;
     overflow-x: hidden;
   }
-  
+
   &-card {
     width: 80%;
     height: 26rem;
@@ -26,8 +26,8 @@
       width: 100%;
     }
     &::after {
-      content: '';
-      background-image: url('/assets/svg/dots.svg');
+      content: "";
+      background-image: url("/assets/svg/dots.svg");
       position: absolute;
       width: 100%;
       background-repeat: no-repeat;
@@ -41,7 +41,7 @@
       font-weight: 700;
       font-size: 1.5rem;
     }
-    
+
     &__teams {
       display: flex;
       flex-direction: column;
@@ -50,19 +50,19 @@
       gap: 1.5rem;
       width: 80%;
     }
-    
+
     &__team {
-      width: 80%; 
+      width: 80%;
       text-decoration: none;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 0 1rem;
-      padding: .5rem;
+      padding: 0.5rem;
       box-sizing: border-box;
       background-color: var(--secondary-theme-color);
-      opacity: .9;
-      transition: opacity .25s;
+      opacity: 0.9;
+      transition: opacity 0.25s;
       &:hover {
         opacity: 1;
       }
@@ -76,7 +76,7 @@
           justify-content: center;
         }
       }
-      
+
       &-text {
         color: var(--reverse-primary-text-color);
         margin: 0;
@@ -92,6 +92,6 @@
       .lg\:fg-card--translated-to-center {
         transform: translateX(50%);
       }
-    }  
+    }
   }
 }

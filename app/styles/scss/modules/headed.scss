@@ -44,7 +44,7 @@
     margin: 0;
     text-align: center;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -0.5rem;
       left: 0;
@@ -56,10 +56,9 @@
       font-size: 0.875rem;
     }
   }
-  
+
   &__link {
     color: var(--primary-shadow-color);
     text-decoration: none;
   }
-  
 }

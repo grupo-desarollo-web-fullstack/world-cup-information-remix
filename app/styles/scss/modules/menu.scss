@@ -25,7 +25,7 @@
       background-color: transparent;
     }
   }
-  
+
   &__link {
     position: relative;
     color: var(--primary-text-color);
@@ -39,7 +39,7 @@
       font-weight: bold;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: -0.125rem;
@@ -72,15 +72,14 @@
       height: 32px;
     }
   }
-  
-  
+
   &-icon {
     --transform-value: 0deg;
     color: var(--reverse-primary-text-color);
     font-size: 1.75rem;
     display: flex;
     transform: rotate(var(--transform-value));
-    transition: transform .25s;
+    transition: transform 0.25s;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -88,12 +87,11 @@
       --transform-value: 180deg;
     }
     @media (min-width: 768px) {
-      display: none;      
+      display: none;
     }
   }
-  
+
   &--hamburger-open {
     left: 0;
   }
-  
 }

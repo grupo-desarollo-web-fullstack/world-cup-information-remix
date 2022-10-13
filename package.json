@@ -3,8 +3,8 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
-    "dev": "concurrently -n \"sass,remix\" -c \"#ff4eff,blue\" \"npm run sass\" \"cross-env CHOKIDAR_USEPOLLING=true remix dev\"",
-    "sass": "sass app/styles/scss:app/styles/css -w --poll"
+    "dev": "concurrently -n \"Styles,Remix\" -c \"#ff4eff,blue\" \"npm run styles\" \"cross-env CHOKIDAR_USEPOLLING=true remix dev\"",
+    "styles": "postcss styles app/styles/scss --base app/styles/scss --ext css --poll --dir app/styles/css -w"
   },
   "dependencies": {
     "@remix-run/node": "^1.7.2",
@@ -16,12 +16,18 @@
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
+    "@csstools/postcss-sass": "^5.0.1",
     "@remix-run/dev": "^1.7.2",
     "@remix-run/eslint-config": "^1.7.2",
     "@remix-run/serve": "^1.7.2",
     "concurrently": "^7.4.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.23.1",
+    "import-meta-resolve": "^2.1.0",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-scss": "^4.0.5",
     "sass": "^1.55.0"
   },
   "engines": {
