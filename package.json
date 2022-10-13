@@ -4,7 +4,7 @@
   "scripts": {
     "build": "remix build",
     "dev": "concurrently -n \"Styles,Remix\" -c \"#ff4eff,blue\" \"npm run styles\" \"cross-env CHOKIDAR_USEPOLLING=true remix dev\"",
-    "styles": "postcss styles app/styles/scss --base app/styles/scss --ext css --poll --dir app/styles/css -w"
+    "styles": "postcss app/styles/scss --base app/styles/scss --ext css --poll --dir app/styles/css -w"
   },
   "dependencies": {
     "@remix-run/node": "^1.7.2",
