@@ -642,11 +642,6 @@
 .slider__button-icon {
   font-size: 1.2rem;
 }
-@media (min-width: 768px) {
-  .slider {
-    height: 520px;
-  }
-}
 
 @keyframes typing {
   from {

@@ -13,8 +13,7 @@ module.exports = {
           const prefix = `file:${'/'.repeat(os.platform() === 'win32' ? 3 : 2)}`;
           const filename = await metaResolve(id, `${prefix}${basedir}`);
           const fileNameWithoutPrefix = filename.replace(prefix, "");
-          console.log(fileNameWithoutPrefix);
-          return fileNameWithoutPrefix;
+          return decodeURIComponent(fileNameWithoutPrefix);
         } catch (error) {
           if (path.extname(id)) {
             const filename = path.resolve(basedir, id);
