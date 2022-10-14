@@ -89,7 +89,7 @@
       }
     }
     @media (min-width: 1007px) {
-      .lg\:fg-card--translated-to-center {
+      &:nth-last-child(1), &:nth-last-child(2) {
         transform: translateX(50%);
       }
     }
