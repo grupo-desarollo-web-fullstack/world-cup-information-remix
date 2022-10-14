@@ -1,5 +1,5 @@
 import { FaRegEnvelope } from "react-icons/fa";
-import ImgWorldCup from "~/assets/img/logotipo-world-cup-logo-en-qatar.jpg"
+import ImgWorldCup from "~/assets/img/logotipo-world-cup-logo-en-qatar.jpg";
 
 const Footer = () => {
   return (
@@ -39,7 +39,7 @@ const Footer = () => {
             <li>
               <a href="https://www.youtube.com/">
                 <img
-                  src="./assets/svg/logo-youtube.svg"
+                  src="/assets/svg/logo-youtube.svg"
                   alt="YouTube"
                   width="24"
                   height="24"
@@ -50,7 +50,7 @@ const Footer = () => {
             <li>
               <a href="https://www.instagram.com/">
                 <img
-                  src="./assets/svg/logo-instagram.svg"
+                  src="/assets/svg/logo-instagram.svg"
                   alt="Instagram"
                   width="24"
                   height="24"
@@ -61,7 +61,7 @@ const Footer = () => {
             <li>
               <a href="https://es-la.facebook.com/">
                 <img
-                  src="./assets/svg/logo-facebook.svg"
+                  src="/assets/svg/logo-facebook.svg"
                   alt="Facebook"
                   width="24"
                   height="24"
