@@ -63,7 +63,7 @@ const MoreInfoQatar = () => {
                   alt="Jugadores que nunca fueron al mundial"
                 />
                 <Card.Body>
-                  <Card.Title as="h5">Los que nunca llegaron</Card.Title>
+                  <Card.Title as="h5">Los que no llegaron</Card.Title>
                   <Card.Text as="p">
                     En esta seccion contaremos mas sobre aquellas estrellas que
                     no clasificaron al mundial

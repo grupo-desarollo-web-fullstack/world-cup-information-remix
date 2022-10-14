@@ -1,7 +1,7 @@
 import Bootstrap from "~/styles/css/modules/bootstrap.css";
 import styleBootstrap from "~/styles/css/modules/styleBootstrap.css";
 import carrusel from "~/styles/css/modules/carrusel.css";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 export const links = () => {
   return [
@@ -16,159 +16,40 @@ export const links = () => {
     {
       rel: "stylesheet",
       href: carrusel,
-    }
+    },
   ];
 };
 
 const LosQueNuncaLlegaron = () => {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }, []);    
+  }, []);
   return (
-    
     <main>
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+      <div class="p-4 p-md-5 mb-4 text-bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic">Los que no llegaron</h1>
+          <p class="lead my-3">
+            En esta seccion se mostrara a los jugadores que no clasificaron al
+            mundial de Qatar 2022, asi como tambien datos resaltantes de cada
+            uno de ellos.
+          </p>
+          <p class="lead mb-0">
+            <a href="#" class="text-white fw-bold">
+              Saltar a la accion...
+            </a>
+          </p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">
-                    Sign up today
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">
-                    Learn more
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">
-                    Browse gallery
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-
-
-
-
-      
-      <div class="container marketing">
+      <section class="container marketing">
         <div class="row">
           <div class="col-lg-4">
             <svg
               class="bd-placeholder-img rounded-circle"
               width="140"
               height="140"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665717248/Zlatan_00006e9807.jpg?updated_at=2022-10-14T03:14:09.526Z"
               role="img"
               aria-label="Placeholder: 140x140"
               preserveAspectRatio="xMidYMid slice"
@@ -181,17 +62,15 @@ const LosQueNuncaLlegaron = () => {
               </text>
             </svg>
 
-            <h2 class="fw-normal">Heading</h2>
+            <h2 class="fw-normal">Zlatan Ibrahimović</h2>
             <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">
-                View details &raquo;
-              </a>
+              Futbolista sueco de ascendencia bosniocroata.​ Juega de delantero
+              y su equipo actual es el A. C. Milan de la Serie A de Italia. Es
+              considerado como uno de los mejores delanteros de todos los
+              tiempos.
             </p>
           </div>
+
           <div class="col-lg-4">
             <svg
               class="bd-placeholder-img rounded-circle"
@@ -210,17 +89,14 @@ const LosQueNuncaLlegaron = () => {
               </text>
             </svg>
 
-            <h2 class="fw-normal">Heading</h2>
+            <h2 class="fw-normal">Erling Haaland</h2>
             <p>
-              Another exciting bit of representative placeholder content. This
-              time, we've moved on to the second column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">
-                View details &raquo;
-              </a>
+              Futbolista noruego que juega como delantero en el Manchester City
+              F. C. de la Premier League de Inglaterra, y en la selección de
+              fútbol de Noruega, el cual es conocido como el proximo CR7.
             </p>
           </div>
+
           <div class="col-lg-4">
             <svg
               class="bd-placeholder-img rounded-circle"
@@ -239,15 +115,11 @@ const LosQueNuncaLlegaron = () => {
               </text>
             </svg>
 
-            <h2 class="fw-normal">Heading</h2>
+            <h2 class="fw-normal">Mohamed Salah</h2>
             <p>
-              And lastly this, the third column of representative placeholder
-              content.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">
-                View details &raquo;
-              </a>
+              Futbolista egipcio que juega como delantero en el Liverpool F. C.
+              de la Premier League de Inglaterra, y la selección de Egipto, de
+              la cual es su capitán; considerado tambien el mejor de Europa.
             </p>
           </div>
 
@@ -256,12 +128,16 @@ const LosQueNuncaLlegaron = () => {
           <div class="row featurette">
             <div class="col-md-7">
               <h2 class="featurette-heading fw-normal lh-1">
-                First featurette heading.{" "}
-                <span class="text-muted">It’ll blow your mind.</span>
+                El retiro de Zlatan del futbol sueco,{" "}
+                <span class="text-muted">una moraleja para muchos.</span>
               </h2>
               <p class="lead">
-                Some great placeholder content for the first featurette here.
-                Imagine some exciting prose here.
+                Zlatan Ibrahimović se retiro del futbol sueco en el año 2016 a
+                causa de un desprestigio parte de sus selección, donde
+                mencionaron reiteradas veces que el equipo de suecia ya no
+                necesita mas a alguien de su edad y que su mejor momento, ya
+                habia pasado, sin embargo Ibra demostro todo lo cantrario, ya
+                que a la edad de 40 años fue fichado por el AC Millan.
               </p>
             </div>
             <div class="col-md-5">
@@ -269,7 +145,7 @@ const LosQueNuncaLlegaron = () => {
                 class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                 width="500"
                 height="500"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://.w3.org/2000/svg"
                 role="img"
                 aria-label="Placeholder: 500x500"
                 preserveAspectRatio="xMidYMid slice"
@@ -289,13 +165,19 @@ const LosQueNuncaLlegaron = () => {
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
               <h2 class="featurette-heading fw-normal lh-1">
-                Oh yeah, it’s that good.{" "}
-                <span class="text-muted">See for yourself.</span>
+                Erling Haaland el joven promesa del fútbol noruego,{" "}
+                <span class="text-muted">
+                  situado entre los mejores del mundo.
+                </span>
               </h2>
               <p class="lead">
-                Another featurette? Of course. More placeholder content here to
-                give you an idea of how this layout would work with some actual
-                real-world content in place.
+                Erling Haaland ha demostrado talento, calidad y resultados en
+                los partidos de su equipo a sus 22 años de edad, sin embargo a
+                pesar de esto no ha logrado obtener los mismos resultados con la
+                selección Noruega, ya que su equipo no logro obtener el puntaje
+                requerido para poder clasificar al mundial de qatar 2022; por
+                otro lado; aun tiene la oportunidad de seguir intentandolo
+                gracias a su edad y su buena condición fisica.
               </p>
             </div>
             <div class="col-md-5 order-md-1">
@@ -320,16 +202,23 @@ const LosQueNuncaLlegaron = () => {
 
           <hr class="featurette-divider"></hr>
 
-          <div class="row featurette">
+          <div class="row featurette mb-3">
             <div class="col-md-7">
               <h2 class="featurette-heading fw-normal lh-1">
-                And lastly, this one. <span class="text-muted">Checkmate.</span>
+                Mohamed Salah el astro egipcio,
+                <span class="text-muted">
+                  considerdo por muchos el mejor de Europa.
+                </span>
               </h2>
               <p class="lead">
-                And yes, this is the last block of representative placeholder
-                content. Again, not really intended to be actually read, simply
-                here to give you a better view of what this would look like with
-                some actual content. Your content.
+                Mohamed Salah es un jugador egipcio de gran calidad y lo a
+                demostrado en varios partidos de la Premier League en el cual se
+                destaca por sus increibles goles, que a veces son dificiles de
+                creer y su gran facilidad de quitarse a un oponente del frente;
+                sin embargo en este año la selección de Egipto no logro
+                clasificar al mundial, en vista de que los equipos contra los
+                que se enfrento eran de un alto nivel, en comparacion de su
+                equipo en el cual tan solo el resalta.
               </p>
             </div>
             <div class="col-md-5">
@@ -351,11 +240,15 @@ const LosQueNuncaLlegaron = () => {
               </svg>
             </div>
           </div>
+
+
+
+
+
         </div>
-      </div>
+      </section>
     </main>
   );
 };
-
 
 export default LosQueNuncaLlegaron;
