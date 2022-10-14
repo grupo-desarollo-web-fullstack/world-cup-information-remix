@@ -37,7 +37,7 @@ const MoreInfoQatar = () => {
 
         <Carousel.Item>
           <img
-            src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665693423/image2_731869f816.jpg?updated_at=2022-10-13T20:37:04.354Z"
+            src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665693674/image3_01_9353b0478d.png?updated_at=2022-10-13T20:41:15.815Z"
             className="d-block w-100"
             alt="image2"
           />
@@ -58,7 +58,7 @@ const MoreInfoQatar = () => {
               <Card bsPrefix="card m-3" bg="light">
                 <Card.Img
                   style={{ height: "15rem" }}
-                  src="https://piks-eldesmarqueporta.netdna-ssl.com/thumbs/o/1200/bin/nacional/info/17-18/Chica-10-3/Los10Mas/Estrellas_Sin_Mundial/Estrellas_sin_Mundial2.jpg"
+                  src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665717260/Los_que_no_llegaron_071847e494.jpg?updated_at=2022-10-14T03:14:21.010Z"
                   variant="top"
                   alt="Jugadores que nunca fueron al mundial"
                 />
@@ -66,7 +66,7 @@ const MoreInfoQatar = () => {
                   <Card.Title as="h5">Los que nunca llegaron</Card.Title>
                   <Card.Text as="p">
                     En esta seccion contaremos mas sobre aquellas estrellas que
-                    nunca clasificaron al mundial
+                    no clasificaron al mundial
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
                     ¡Saber mas!
@@ -108,48 +108,6 @@ const MoreInfoQatar = () => {
                   <Card.Text as="p">
                     En esta seccion te contaremos sobre los jugadores mas
                     jovenes que fueron al mundial
-                  </Card.Text>
-                  <Button as="a" variant="dark" href="#">
-                    ¡Saber mas!
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card bsPrefix="card m-3" bg="light">
-                <Card.Img
-                  style={{ height: "15rem" }}
-                  src="https://luznoticiasrm.blob.core.windows.net.optimalcdn.com/images/2022/03/31/imagen-de-la-pantalla-de-un-video-juego-8e9a2e4c.jpg"
-                  variant="top"
-                  alt="Jugadores que nunca fueron al mundial"
-                />
-                <Card.Body>
-                  <Card.Title as="h5">Mejores selecciones</Card.Title>
-                  <Card.Text as="p">
-                    En esta seccion te hablaremos sobre las mejores selecciones
-                    de futbol que existen en el mundo
-                  </Card.Text>
-                  <Button as="a" variant="dark" href="#">
-                    ¡Saber mas!
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card bsPrefix="card m-3" bg="light">
-                <Card.Img
-                  style={{ height: "15rem" }}
-                  src="https://img.asmedia.epimg.net/resizer/NOp_g6-T3ZrCS_IUW_TXfRSlBpY=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/U6ISC4MFYNINRO56DRQYFT7WJA.jpg"
-                  variant="top"
-                  alt="Jugadores que nunca fueron al mundial"
-                />
-                <Card.Body>
-                  <Card.Title as="h5">Los estadios mas modernos</Card.Title>
-                  <Card.Text as="p">
-                    En esta seccion te hablaremos mas sobre los estadios donde
-                    se definira al unico ganador de este mundial
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
                     ¡Saber mas!
