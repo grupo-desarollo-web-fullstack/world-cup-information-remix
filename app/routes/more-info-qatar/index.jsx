@@ -81,7 +81,7 @@ const MoreInfoQatar = () => {
                     En esta seccion te contaremos sobre los mejores balones con
                     los que se jugaron cada mundial
                   </Card.Text>
-                  <Button as="a" variant="dark" href="">
+                  <Button as={Link} variant="dark" to="./balones">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
@@ -102,49 +102,7 @@ const MoreInfoQatar = () => {
                     En esta seccion te contaremos sobre los jugadores mas
                     jovenes que fueron al mundial
                   </Card.Text>
-                  <Button as="a" variant="dark" href="#">
-                    ¡Saber mas!
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card bsPrefix="card m-3" bg="light">
-                <Card.Img
-                  style={{ height: "15rem" }}
-                  src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/03/18/15529140472083.jpg"
-                  variant="top"
-                  alt="Jugadores que nunca fueron al mundial"
-                />
-                <Card.Body>
-                  <Card.Title as="h5">Mejores camisetas del mundo</Card.Title>
-                  <Card.Text as="p">
-                    En esta seccion te hablaremos sobre las mejores camisetas
-                    del mundo, asi como tambien cual es su significado
-                  </Card.Text>
-                  <Button as="a" variant="dark" href="#">
-                    ¡Saber mas!
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card bsPrefix="card m-3" bg="light">
-                <Card.Img
-                  style={{ height: "15rem" }}
-                  src="https://www.infobae.com/new-resizer/8dEAhaq8YH0wYsDssEdlS0D3JNQ=/1024x512/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/HEOWTHEJQBACLO5AFLFD3LXYRQ.jpg"
-                  variant="top"
-                  alt="Jugadores que nunca fueron al mundial"
-                />
-                <Card.Body>
-                  <Card.Title as="h5">Los favoritos</Card.Title>
-                  <Card.Text as="p">
-                    En esta seccion te hablaremos sobre los mejores equipos que
-                    podrian obtener la copa del mundo este 2022
-                  </Card.Text>
-                  <Button as="a" variant="dark" href="#">
+                  <Button as={Link} variant="dark" to="./losMasJovenes">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
@@ -165,7 +123,7 @@ const MoreInfoQatar = () => {
                     En esta seccion te hablaremos mas sobre como poder viajar a
                     Qatar y sus reglamentos
                   </Card.Text>
-                  <Button as="a" variant="dark" href="#">
+                  <Button as={Link} variant="dark" to="./masSobreQatar">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
