@@ -4,6 +4,17 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    object-fit: cover;
+}
+
+.design__img {
+    object-fit: cover;
+}
+
+.main--post {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {

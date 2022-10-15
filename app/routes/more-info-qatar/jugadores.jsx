@@ -1,24 +1,4 @@
-import Bootstrap from "~/styles/css/modules/bootstrap.css";
-import styleBootstrap from "~/styles/css/modules/styleBootstrap.css";
-import carrusel from "~/styles/css/modules/carrusel.css";
 import { useEffect } from "react";
-
-export const links = () => {
-  return [
-    {
-      rel: "stylesheet",
-      href: Bootstrap,
-    },
-    {
-      rel: "stylesheet",
-      href: styleBootstrap,
-    },
-    {
-      rel: "stylesheet",
-      href: carrusel,
-    },
-  ];
-};
 
 const LosQueNuncaLlegaron = () => {
   useEffect(() => {
@@ -26,43 +6,36 @@ const LosQueNuncaLlegaron = () => {
   }, []);
   return (
     <main>
-      <div class="p-4 p-md-5 mb-4 text-bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4 fst-italic">Los que no llegaron</h1>
-          <p class="lead my-3">
+      <article className="p-4 p-md-5 mb-4 text-bg-dark pt-1 d-flex align-items-center" style={{height:'80vh'}}>
+        <div className="col-md-6 px-0">
+          <h1 className="display-4 fst-italic">Los que no llegaron</h1>
+          <p className="lead my-3">
             En esta seccion se mostrara a los jugadores que no clasificaron al
             mundial de Qatar 2022, asi como tambien datos resaltantes de cada
             uno de ellos.
           </p>
-          <p class="lead mb-0">
-            <a href="#" class="text-white fw-bold">
+          <p className="lead mb-0">
+            <a href="#jugadores" className="text-white fw-bold">
               Saltar a la accion...
             </a>
           </p>
         </div>
-      </div>
+      </article>
 
-      <section class="container marketing">
-        <div class="row">
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665717248/Zlatan_00006e9807.jpg?updated_at=2022-10-14T03:14:09.526Z"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">
-                140x140
-              </text>
-            </svg>
+      <section className="container marketing">
+        <div className="row">
+          <div className="col-lg-4">
+            <div className="col-auto d-none d-lg-block">
+              <img
+                className="bd-placeholder-img rounded-circle"
+                src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665717248/Zlatan_00006e9807.jpg?updated_at=2022-10-14T03:14:09.526Z"
+                alt="Zlatan"
+                width={140}
+                height={140}
+              />
+            </div>
 
-            <h2 class="fw-normal">Zlatan Ibrahimović</h2>
+            <h2 className="fw-normal">Zlatan Ibrahimović</h2>
             <p>
               Futbolista sueco de ascendencia bosniocroata.​ Juega de delantero
               y su equipo actual es el A. C. Milan de la Serie A de Italia. Es
@@ -71,25 +44,18 @@ const LosQueNuncaLlegaron = () => {
             </p>
           </div>
 
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">
-                140x140
-              </text>
-            </svg>
+          <div className="col-lg-4">
+            <div className="col-auto d-none d-lg-block">
+              <img
+                className="bd-placeholder-img rounded-circle"
+                src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665794925/haaalnad12_25bf76f232.jpg?updated_at=2022-10-15T00:48:46.133Z"
+                alt="Zlatan"
+                width={140}
+                height={140}
+              />
+            </div>
 
-            <h2 class="fw-normal">Erling Haaland</h2>
+            <h2 className="fw-normal">Erling Haaland</h2>
             <p>
               Futbolista noruego que juega como delantero en el Manchester City
               F. C. de la Premier League de Inglaterra, y en la selección de
@@ -97,25 +63,18 @@ const LosQueNuncaLlegaron = () => {
             </p>
           </div>
 
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">
-                140x140
-              </text>
-            </svg>
+          <div className="col-lg-4">
+            <div className="col-auto d-none d-lg-block">
+              <img
+                className="bd-placeholder-img rounded-circle"
+                src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665795055/mohamed_salasas1212_c4d90465b3.webp?updated_at=2022-10-15T00:50:56.593Z"
+                alt="Zlatan"
+                width={140}
+                height={140}
+              />
+            </div>
 
-            <h2 class="fw-normal">Mohamed Salah</h2>
+            <h2 className="fw-normal">Mohamed Salah</h2>
             <p>
               Futbolista egipcio que juega como delantero en el Liverpool F. C.
               de la Premier League de Inglaterra, y la selección de Egipto, de
@@ -123,15 +82,15 @@ const LosQueNuncaLlegaron = () => {
             </p>
           </div>
 
-          <hr class="featurette-divider"></hr>
+          <hr className="featurette-divider"></hr>
 
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">
+          <div className="row featurette" id="jugadores">
+            <div className="col-md-7">
+              <h2 className="featurette-heading fw-normal lh-1">
                 El retiro de Zlatan del futbol sueco,{" "}
-                <span class="text-muted">una moraleja para muchos.</span>
+                <span className="text-muted">una moraleja para muchos.</span>
               </h2>
-              <p class="lead">
+              <p className="lead">
                 Zlatan Ibrahimović se retiro del futbol sueco en el año 2016 a
                 causa de un desprestigio parte de sus selección, donde
                 mencionaron reiteradas veces que el equipo de suecia ya no
@@ -140,77 +99,57 @@ const LosQueNuncaLlegaron = () => {
                 que a la edad de 40 años fue fichado por el AC Millan.
               </p>
             </div>
-            <div class="col-md-5">
-              <svg
-                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                width="500"
-                height="500"
-                xmlns="http://.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee" />
-                <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                  500x500
-                </text>
-              </svg>
+            <div className="col-md-5">
+              <img
+                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto design__img"
+                style={{ height: 500 }}
+                src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665795491/ibrahimovic_suecia_1920_1_d59672269a.jpg?updated_at=2022-10-15T00:58:12.354Z"
+                alt="Zlatan"
+              />
             </div>
           </div>
 
-          <hr class="featurette-divider"></hr>
+          <hr className="featurette-divider"></hr>
 
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading fw-normal lh-1">
+          <div className="row featurette">
+            <div className="col-md-7 order-md-2">
+              <h2 className="featurette-heading fw-normal lh-1">
                 Erling Haaland el joven promesa del fútbol noruego,{" "}
-                <span class="text-muted">
+                <span className="text-muted">
                   situado entre los mejores del mundo.
                 </span>
               </h2>
-              <p class="lead">
+              <p className="lead">
                 Erling Haaland ha demostrado talento, calidad y resultados en
                 los partidos de su equipo a sus 22 años de edad, sin embargo a
                 pesar de esto no ha logrado obtener los mismos resultados con la
                 selección Noruega, ya que su equipo no logro obtener el puntaje
                 requerido para poder clasificar al mundial de qatar 2022; por
-                otro lado; aun tiene la oportunidad de seguir intentandolo
-                gracias a su edad y su buena condición fisica.
+                otro lado; aun puede lograr jugar en un mundial gracias a su
+                edad.
               </p>
             </div>
-            <div class="col-md-5 order-md-1">
-              <svg
-                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                width="500"
-                height="500"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee" />
-                <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                  500x500
-                </text>
-              </svg>
+            <div className="col-md-5 order-md-1">
+              <img
+                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto design__img"
+                style={{ height: 500 }}
+                src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665795486/erling_haaland_marco_hat_trick_con_noruega_1_f4ff6e5a61.webp?updated_at=2022-10-15T00:58:07.143Z"
+                alt="Haaland"
+              />
             </div>
           </div>
 
-          <hr class="featurette-divider"></hr>
+          <hr className="featurette-divider"></hr>
 
-          <div class="row featurette mb-3">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">
+          <div className="row featurette mb-3">
+            <div className="col-md-7">
+              <h2 className="featurette-heading fw-normal lh-1">
                 Mohamed Salah el astro egipcio,
-                <span class="text-muted">
-                  considerdo por muchos el mejor de Europa.
+                <span className="text-muted">
+                  considerdo el mejor de Europa.
                 </span>
               </h2>
-              <p class="lead">
+              <p className="lead">
                 Mohamed Salah es un jugador egipcio de gran calidad y lo a
                 demostrado en varios partidos de la Premier League en el cual se
                 destaca por sus increibles goles, que a veces son dificiles de
@@ -221,30 +160,15 @@ const LosQueNuncaLlegaron = () => {
                 equipo en el cual tan solo el resalta.
               </p>
             </div>
-            <div class="col-md-5">
-              <svg
-                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                width="500"
-                height="500"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee" />
-                <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                  500x500
-                </text>
-              </svg>
+            <div className="col-md-5">
+              <img
+                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto design__img"
+                style={{ height: 500 }}
+                src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665797812/TNU_2_NMI_7_AFAXVFHSDT_5_OJXBHAI_b07f7db72d.jpg?updated_at=2022-10-15T01:36:52.856Z"
+                alt="Haaland"
+              />
             </div>
           </div>
-
-
-
-
-
         </div>
       </section>
     </main>

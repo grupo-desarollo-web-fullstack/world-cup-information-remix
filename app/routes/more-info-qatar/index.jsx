@@ -4,16 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Bootstrap from "~/styles/css/modules/bootstrap.css";
-
-export const links = () => {
-  return [
-    {
-      rel: "stylesheet",
-      href: Bootstrap,
-    },
-  ]
-}
+import { Link, Links } from "@remix-run/react";
 
 const MoreInfoQatar = () => {
   return (
@@ -68,7 +59,7 @@ const MoreInfoQatar = () => {
                     En esta seccion contaremos mas sobre aquellas estrellas que
                     no clasificaron al mundial
                   </Card.Text>
-                  <Button as="a" variant="dark" href="#">
+                  <Button as={Link} variant="dark" to="./jugadores">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
@@ -88,7 +79,7 @@ const MoreInfoQatar = () => {
                     En esta seccion te contaremos sobre los mejores balones con
                     los que se jugaron cada mundial
                   </Card.Text>
-                  <Button as="a" variant="dark" href="#">
+                  <Button as="a" variant="dark" href="">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
