@@ -15,6 +15,7 @@ const MoreInfoQatar = () => {
             src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665694051/image1_02_2fe0205f2c.jpg?updated_at=2022-10-13T20:47:31.963Z"
             className="d-block w-100"
             alt="image1"
+            style={{height:'100vh',objectFit:'cover'}}
           />
 
           <Carousel.Caption className="slider-theme bg-gradient opacity-100">
@@ -31,6 +32,7 @@ const MoreInfoQatar = () => {
             src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665693674/image3_01_9353b0478d.png?updated_at=2022-10-13T20:41:15.815Z"
             className="d-block w-100"
             alt="image2"
+            style={{height:'100vh',objectFit:'cover'}}
           />
           <Carousel.Caption className="slider-theme bg-gradient opacity-100">
             <h3>Jugadores Jovenes</h3>
