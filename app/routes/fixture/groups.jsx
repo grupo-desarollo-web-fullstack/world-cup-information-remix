@@ -1,5 +1,5 @@
 import { json } from "@remix-run/node";
-import SimulatorGroups from "~/components/Fixture/FixtureGroups";
+import FixtureGroups from "~/components/Fixture/FixtureGroups";
 import fetchStrapi from "~/utils/fetchStrapi";
 import stylesSwiper from "~/styles/css/modules/swiper.css";
 import { Outlet } from "@remix-run/react";
@@ -26,7 +26,7 @@ const Groups = () => {
   return (
     <section className="simulator">
       <div className="simulator-container">
-        <SimulatorGroups />
+        <FixtureGroups />
         <div className="simulator__fixture">
           <Outlet />
         </div>

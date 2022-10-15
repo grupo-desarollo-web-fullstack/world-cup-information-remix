@@ -1,6 +1,6 @@
 import { Outlet } from "@remix-run/react";
 
-const Country = () => {
+const Team = () => {
   return (
     <main>
       <Outlet />
@@ -8,4 +8,4 @@ const Country = () => {
   );
 };
 
-export default Country;
+export default Team;
