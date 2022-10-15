@@ -2,6 +2,9 @@
   background-color: var(--primary-highlight-color);
   border-radius: 0.5rem;
   padding: 1rem 0;
+  &--team{
+    width: 90%;
+  }
   &-container {
     display: flex;
     justify-content: space-between;

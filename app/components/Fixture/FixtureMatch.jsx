@@ -1,14 +1,15 @@
 import { DateTime } from "luxon";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const FixtureMatch = ({ match }) => {
+const FixtureMatch = ({ match, className }) => {
   const { home, away, date, stadium } = match;
-  const [dateMatch, setDateMatch] = useState(DateTime.fromISO(date));
+  const [dateMatch] = useState(DateTime.fromISO(date));
+  const matchRef = useRef();
   useEffect(() => {
-    setDateMatch(DateTime.fromISO(date));
+    if (className) matchRef.current.classList.add(className);
   }, []);
   return (
-    <article className="match">
+    <article ref={matchRef} className="match">
       <div className="match-container">
         <div className="match__team">
           <div className="match__flag-container">

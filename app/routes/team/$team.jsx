@@ -86,7 +86,11 @@ const TeamParams = () => {
 
           <div className="services__image services__img--4">
             {country.attributes.matchesHome.data.map((match) => (
-              <FixtureMatch key={match.id} match={match.attributes} />
+              <FixtureMatch
+                className="match--team"
+                key={match.id}
+                match={match.attributes}
+              />
             ))}
           </div>
 
@@ -100,7 +104,11 @@ const TeamParams = () => {
 
           <div className="services__image--5 services__img--5">
             {country.attributes.matchesAway.data.map((match) => (
-              <FixtureMatch key={match.id} match={match.attributes} />
+              <FixtureMatch
+                className="match--team"
+                key={match.id}
+                match={match.attributes}
+              />
             ))}
           </div>
         </section>
