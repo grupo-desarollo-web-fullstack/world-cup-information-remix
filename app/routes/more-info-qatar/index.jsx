@@ -4,16 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Bootstrap from "~/styles/css/modules/bootstrap.css";
-
-export const links = () => {
-  return [
-    {
-      rel: "stylesheet",
-      href: Bootstrap,
-    },
-  ]
-}
+import { Link, Links } from "@remix-run/react";
 
 const MoreInfoQatar = () => {
   return (
@@ -24,6 +15,7 @@ const MoreInfoQatar = () => {
             src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665694051/image1_02_2fe0205f2c.jpg?updated_at=2022-10-13T20:47:31.963Z"
             className="d-block w-100"
             alt="image1"
+            style={{height:'100vh',objectFit:'cover'}}
           />
 
           <Carousel.Caption className="slider-theme bg-gradient opacity-100">
@@ -37,9 +29,10 @@ const MoreInfoQatar = () => {
 
         <Carousel.Item>
           <img
-            src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665693423/image2_731869f816.jpg?updated_at=2022-10-13T20:37:04.354Z"
+            src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665693674/image3_01_9353b0478d.png?updated_at=2022-10-13T20:41:15.815Z"
             className="d-block w-100"
             alt="image2"
+            style={{height:'100vh',objectFit:'cover'}}
           />
           <Carousel.Caption className="slider-theme bg-gradient opacity-100">
             <h3>Jugadores Jovenes</h3>
@@ -58,17 +51,17 @@ const MoreInfoQatar = () => {
               <Card bsPrefix="card m-3" bg="light">
                 <Card.Img
                   style={{ height: "15rem" }}
-                  src="https://piks-eldesmarqueporta.netdna-ssl.com/thumbs/o/1200/bin/nacional/info/17-18/Chica-10-3/Los10Mas/Estrellas_Sin_Mundial/Estrellas_sin_Mundial2.jpg"
+                  src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665717260/Los_que_no_llegaron_071847e494.jpg?updated_at=2022-10-14T03:14:21.010Z"
                   variant="top"
                   alt="Jugadores que nunca fueron al mundial"
                 />
                 <Card.Body>
-                  <Card.Title as="h5">Los que nunca llegaron</Card.Title>
+                  <Card.Title as="h5">Los que no llegaron</Card.Title>
                   <Card.Text as="p">
                     En esta seccion contaremos mas sobre aquellas estrellas que
-                    nunca clasificaron al mundial
+                    no clasificaron al mundial
                   </Card.Text>
-                  <Button as="a" variant="dark" href="#">
+                  <Button as={Link} variant="dark" to="./jugadores">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
@@ -88,7 +81,7 @@ const MoreInfoQatar = () => {
                     En esta seccion te contaremos sobre los mejores balones con
                     los que se jugaron cada mundial
                   </Card.Text>
-                  <Button as="a" variant="dark" href="#">
+                  <Button as={Link} variant="dark" to="./balones">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
@@ -109,91 +102,7 @@ const MoreInfoQatar = () => {
                     En esta seccion te contaremos sobre los jugadores mas
                     jovenes que fueron al mundial
                   </Card.Text>
-                  <Button as="a" variant="dark" href="#">
-                    ¡Saber mas!
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card bsPrefix="card m-3" bg="light">
-                <Card.Img
-                  style={{ height: "15rem" }}
-                  src="https://luznoticiasrm.blob.core.windows.net.optimalcdn.com/images/2022/03/31/imagen-de-la-pantalla-de-un-video-juego-8e9a2e4c.jpg"
-                  variant="top"
-                  alt="Jugadores que nunca fueron al mundial"
-                />
-                <Card.Body>
-                  <Card.Title as="h5">Mejores selecciones</Card.Title>
-                  <Card.Text as="p">
-                    En esta seccion te hablaremos sobre las mejores selecciones
-                    de futbol que existen en el mundo
-                  </Card.Text>
-                  <Button as="a" variant="dark" href="#">
-                    ¡Saber mas!
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card bsPrefix="card m-3" bg="light">
-                <Card.Img
-                  style={{ height: "15rem" }}
-                  src="https://img.asmedia.epimg.net/resizer/NOp_g6-T3ZrCS_IUW_TXfRSlBpY=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/U6ISC4MFYNINRO56DRQYFT7WJA.jpg"
-                  variant="top"
-                  alt="Jugadores que nunca fueron al mundial"
-                />
-                <Card.Body>
-                  <Card.Title as="h5">Los estadios mas modernos</Card.Title>
-                  <Card.Text as="p">
-                    En esta seccion te hablaremos mas sobre los estadios donde
-                    se definira al unico ganador de este mundial
-                  </Card.Text>
-                  <Button as="a" variant="dark" href="#">
-                    ¡Saber mas!
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card bsPrefix="card m-3" bg="light">
-                <Card.Img
-                  style={{ height: "15rem" }}
-                  src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/03/18/15529140472083.jpg"
-                  variant="top"
-                  alt="Jugadores que nunca fueron al mundial"
-                />
-                <Card.Body>
-                  <Card.Title as="h5">Mejores camisetas del mundo</Card.Title>
-                  <Card.Text as="p">
-                    En esta seccion te hablaremos sobre las mejores camisetas
-                    del mundo, asi como tambien cual es su significado
-                  </Card.Text>
-                  <Button as="a" variant="dark" href="#">
-                    ¡Saber mas!
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card bsPrefix="card m-3" bg="light">
-                <Card.Img
-                  style={{ height: "15rem" }}
-                  src="https://www.infobae.com/new-resizer/8dEAhaq8YH0wYsDssEdlS0D3JNQ=/1024x512/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/HEOWTHEJQBACLO5AFLFD3LXYRQ.jpg"
-                  variant="top"
-                  alt="Jugadores que nunca fueron al mundial"
-                />
-                <Card.Body>
-                  <Card.Title as="h5">Los favoritos</Card.Title>
-                  <Card.Text as="p">
-                    En esta seccion te hablaremos sobre los mejores equipos que
-                    podrian obtener la copa del mundo este 2022
-                  </Card.Text>
-                  <Button as="a" variant="dark" href="#">
+                  <Button as={Link} variant="dark" to="./losMasJovenes">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
@@ -214,7 +123,7 @@ const MoreInfoQatar = () => {
                     En esta seccion te hablaremos mas sobre como poder viajar a
                     Qatar y sus reglamentos
                   </Card.Text>
-                  <Button as="a" variant="dark" href="#">
+                  <Button as={Link} variant="dark" to="./masSobreQatar">
                     ¡Saber mas!
                   </Button>
                 </Card.Body>
