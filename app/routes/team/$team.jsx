@@ -12,11 +12,21 @@ export const loader = async ({ params }) => {
     "populate[1]": "group",
     "populate[2]": "matchesHome",
     "populate[3]": "matchesAway",
-    "populate[matchesHome][populate]": "*",
-    "populate[matchesAway][populate]": "*",
+    "populate[matchesHome][populate][0]": "home",
+    "populate[matchesHome][populate][1]": "away",
+    "populate[matchesHome][populate][2]": "stadium",
+    "populate[matchesAway][populate][0]": "home",
+    "populate[matchesAway][populate][1]": "away",
+    "populate[matchesAway][populate][2]": "stadium",
     "populate[flag][populate]": "*",
     "populate[group][populate][0]": "countries",
     "populate[group][populate][countries][populate]": "*",
+    "populate[matchesHome][populate][home][populate]": "*",
+    "populate[matchesHome][populate][away][populate]": "*",
+    "populate[matchesHome][populate][stadium][populate]": "*",
+    "populate[matchesAway][populate][home][populate]": "*",
+    "populate[matchesAway][populate][away][populate]": "*",
+    "populate[matchesAway][populate][stadium][populate]": "*",
   });
   return json({
     countries: dataCountry,
@@ -74,7 +84,11 @@ const TeamParams = () => {
             </a>
           </div>
 
-          <div className="services__image services__img--4"></div>
+          <div className="services__image services__img--4">
+            {country.attributes.matchesHome.data.map((match) => (
+              <FixtureMatch key={match.id} match={match.attributes} />
+            ))}
+          </div>
 
           <div className="services__texts services__texts--4">
             <h2 className="services__title"> VISITANTE</h2>
@@ -84,14 +98,10 @@ const TeamParams = () => {
             </a>
           </div>
 
-          <div className="services__image--5 services__img--5"></div>
-
-          <div className="services__texts services__texts--5">
-            <h2 className="services__title"> PARTIDO</h2>
-            <p className="services__paragraph"> Partido que se disputa.</p>
-            <a href="#" className="services__cta">
-              Leer más
-            </a>
+          <div className="services__image--5 services__img--5">
+            {country.attributes.matchesAway.data.map((match) => (
+              <FixtureMatch key={match.id} match={match.attributes} />
+            ))}
           </div>
         </section>
       </main>

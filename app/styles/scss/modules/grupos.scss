@@ -29,27 +29,32 @@
 }
 
 .services__img--2 {
-  background-image: url("https://i.pinimg.com/564x/6d/f3/9a/6df39a6f74b9037da4e87527fc8a2d49--watch-tv-now-panda-babies.jpg");
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .services__img--3 {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 .services__img--4 {
-  background-image: url("https://i.pinimg.com/564x/6d/f3/9a/6df39a6f74b9037da4e87527fc8a2d49--watch-tv-now-panda-babies.jpg");
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem 0;
 }
 
 .services__img--5 {
-  background-image: url("https://i.pinimg.com/564x/6d/f3/9a/6df39a6f74b9037da4e87527fc8a2d49--watch-tv-now-panda-babies.jpg");
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .services__texts {
@@ -109,14 +114,13 @@
 
 @media (min-width: 768px) {
   .services {
-    grid-template-rows: repeat(5, 500px);
+    grid-template-rows: repeat(4, 500px);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "text1 img1"
       "img2 text2"
       "text3 img3"
-      "img4 text4"
-      "text5 img5";
+      "img4 text4";
   }
   .services__img--1 {
     grid-area: img1;
@@ -160,12 +164,10 @@
   }
 
   .service__image--4 {
-    background-image: url("https://media.revistagq.com/photos/5ca5fa0ad71dd959bc9581c5/3:4/w_1200,h_1600,c_limit/kungfu_2085.jpeg");
     grid-area: img4;
   }
 
   .service__image--5 {
-    background-image: url("https://media.revistagq.com/photos/5ca5fa0ad71dd959bc9581c5/3:4/w_1200,h_1600,c_limit/kungfu_2085.jpeg");
     grid-area: img5;
   }
   .services__texts--5 {
