@@ -6,7 +6,10 @@ const Balones = () => {
   }, []);
   return (
     <main className="overflow-hidden">
-      <article className="p-4 p-md-5 mb-4  text-bg-dark mt-1 pt-1 d-flex align-items-center" style={{height:'80vh'}}>
+      <article
+        className="p-4 p-md-5 mb-4  text-bg-dark mt-1 pt-1 d-flex align-items-center"
+        style={{ height: "80vh" }}
+      >
         <div className="col-md-6 px-0">
           <h1 className="display-4 fst-italic">Los mejores balones</h1>
           <p className="lead my-3">
@@ -41,11 +44,11 @@ const Balones = () => {
               </p>
             </div>
             <div className="col-auto d-none d-lg-block">
-            <img
+              <img
                 className="bd-placeholder-img design__img"
                 src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665800625/telstar70_1_1_1_e1222f1c3f.jpg?updated_at=2022-10-15T02:23:46.171Z"
                 alt="TELSTAR"
-                style={{ height: 250, width:200}}
+                style={{ height: 250, width: 200 }}
               />
             </div>
           </div>
@@ -67,11 +70,11 @@ const Balones = () => {
               </p>
             </div>
             <div className="col-auto d-none d-lg-block">
-            <img
+              <img
                 className="bd-placeholder-img design__img"
                 src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665800052/tango_c0c84d055f.png?updated_at=2022-10-15T02:14:13.229Z"
                 alt="TANGO"
-                style={{ height: 250, width:200}}
+                style={{ height: 250, width: 200 }}
               />
             </div>
           </div>
@@ -93,11 +96,11 @@ const Balones = () => {
               </p>
             </div>
             <div className="col-auto d-none d-lg-block">
-            <img
+              <img
                 className="bd-placeholder-img design__img"
                 src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665800422/fevernova2002_1_2_2d2c617b80.jpg?updated_at=2022-10-15T02:20:22.975Z"
                 alt="FEVERNOVA"
-                style={{ height: 250, width:200}}
+                style={{ height: 250, width: 200 }}
               />
             </div>
           </div>
@@ -118,11 +121,11 @@ const Balones = () => {
               </p>
             </div>
             <div className="col-auto d-none d-lg-block">
-            <img
+              <img
                 className="bd-placeholder-img design__img"
                 src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665799180/balon_adidas_team_geist_ffbe98cdba.png?updated_at=2022-10-15T01:59:40.929Z"
                 alt="BALÓN ADIDAS + TEAMGEIST"
-                style={{ height: 250, width:200}}
+                style={{ height: 250, width: 200 }}
               />
             </div>
           </div>
@@ -144,11 +147,11 @@ const Balones = () => {
               </p>
             </div>
             <div className="col-auto d-none d-lg-block">
-            <img
+              <img
                 className="bd-placeholder-img design__img"
                 src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665800050/JABULANI_1_90adc4c014.jpg?updated_at=2022-10-15T02:14:11.084Z"
                 alt="JABULANI"
-                style={{ height: 250, width:200}}
+                style={{ height: 250, width: 200 }}
               />
             </div>
           </div>
@@ -169,11 +172,11 @@ const Balones = () => {
               </p>
             </div>
             <div className="col-auto d-none d-lg-block">
-            <img
+              <img
                 className="bd-placeholder-img design__img"
                 src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665799181/brazuca_759fef7845.png?updated_at=2022-10-15T01:59:41.429Z"
                 alt="BRAZUCA"
-                style={{ height: 250, width:200}}
+                style={{ height: 250, width: 200 }}
               />
             </div>
           </div>
@@ -190,15 +193,16 @@ const Balones = () => {
               <p className="mb-auto">
                 El Telstar 18 regresa a los orígenes de blanco y negro y tiene
                 en su diseño una carcasa con elementos reciclables y lo más
-                llamativo un chip insertado dentro del balón para ayudar a los arbitros.
+                llamativo un chip insertado dentro del balón para ayudar a los
+                arbitros.
               </p>
             </div>
             <img
-                className="bd-placeholder-img design__img"
-                src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665800782/61_EK_5gan_O_L_AC_UL_600_SR_600_400_1_549da592b3.jpg?updated_at=2022-10-15T02:26:23.722Z"
-                alt="RUSIA"
-                style={{ height: 250, width:200}}
-              />  
+              className="bd-placeholder-img design__img"
+              src="https://res.cloudinary.com/dq0gl3g4k/image/upload/v1665800782/61_EK_5gan_O_L_AC_UL_600_SR_600_400_1_549da592b3.jpg?updated_at=2022-10-15T02:26:23.722Z"
+              alt="RUSIA"
+              style={{ height: 250, width: 200 }}
+            />
           </div>
         </div>
       </div>

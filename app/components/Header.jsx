@@ -56,10 +56,10 @@ const Header = () => {
             <li>
               <Link
                 onClick={handleClickClose}
-                to="/simulator"
+                to="/fixture/groups"
                 className="menu__link"
               >
-                Llegando hasta la final
+                Fixture
               </Link>
             </li>
             <li>

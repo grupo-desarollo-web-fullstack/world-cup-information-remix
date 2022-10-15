@@ -22,7 +22,6 @@ export const loader = async ({ params }) => {
 const CountryParams = () => {
   const { countries } = useLoaderData();
   const [country] = countries.data;
-  console.log(country);
   return (
     <>
       <div>CountryParams</div>
@@ -38,7 +37,7 @@ const CountryParams = () => {
               Te mostramos, la bandera de la selección
             </p>
             <a href="#" class="services__cta">
-            Leer más
+              Leer más
             </a>
           </div>
 
@@ -46,12 +45,9 @@ const CountryParams = () => {
 
           <div class="services__texts services__texts--2">
             <h2 class="services__title"> GRUPO</h2>
-            <p class="services__paragraph">
-              {" "}
-             A qué grupo pertenece
-            </p>
+            <p class="services__paragraph"> A qué grupo pertenece</p>
             <a href="#" class="services__cta">
-            Leer más
+              Leer más
             </a>
           </div>
 
@@ -59,40 +55,31 @@ const CountryParams = () => {
 
           <div class="services__texts services__texts--3">
             <h2 class="services__title"> CASA</h2>
-            <p class="services__paragraph">
-              {" "}
-             Juega de local.
-            </p>
+            <p class="services__paragraph"> Juega de local.</p>
             <a href="#" class="services__cta">
-            Leer más
+              Leer más
             </a>
           </div>
 
           <div class="services__image service__img--4"></div>
 
-<div class="services__texts services__texts--4">
-  <h2 class="services__title"> VISITANTE</h2>
-  <p class="services__paragraph">
-    {" "}
-    Juega de visitante.
-  </p>
-  <a href="#" class="services__cta">
-  Leer más
-  </a>
-</div>
+          <div class="services__texts services__texts--4">
+            <h2 class="services__title"> VISITANTE</h2>
+            <p class="services__paragraph"> Juega de visitante.</p>
+            <a href="#" class="services__cta">
+              Leer más
+            </a>
+          </div>
 
-<div class="services__image--5 service__img--5"></div>
+          <div class="services__image--5 service__img--5"></div>
 
-<div class="services__texts services__texts--5">
-  <h2 class="services__title"> PARTIDO</h2>
-  <p class="services__paragraph">
-    {" "}
-    Partido que se disputa.
-  </p>
-  <a href="#" class="services__cta">
-  Leer más
-  </a>
-</div>
+          <div class="services__texts services__texts--5">
+            <h2 class="services__title"> PARTIDO</h2>
+            <p class="services__paragraph"> Partido que se disputa.</p>
+            <a href="#" class="services__cta">
+              Leer más
+            </a>
+          </div>
         </section>
       </main>
     </>

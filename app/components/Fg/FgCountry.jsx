@@ -5,7 +5,7 @@ const FgCountry = ({ country }) => {
     <Link
       target="_blank"
       rel="noopener noreferrer"
-      to={`country/${country.slug}`}
+      to={`/country/${country.slug}`}
       className="fg-card__team"
     >
       <div className="fg-card__team-img__container">

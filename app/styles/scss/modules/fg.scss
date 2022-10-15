@@ -25,6 +25,13 @@
     @media (min-width: 672px) {
       width: 100%;
     }
+    &--main {
+      @media (min-width: 1007px) {
+        &:nth-last-child(1), &:nth-last-child(2) {
+          transform: translateX(50%);
+        }
+      }
+    }
     &::after {
       content: "";
       background-image: url("/assets/svg/dots.svg");
@@ -88,10 +95,6 @@
         }
       }
     }
-    @media (min-width: 1007px) {
-      &:nth-last-child(1), &:nth-last-child(2) {
-        transform: translateX(50%);
-      }
-    }
+    
   }
 }

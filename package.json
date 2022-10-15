@@ -2,9 +2,10 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
-    "dev": "concurrently -n \"Styles,Remix\" -c \"#ff4eff,blue\" \"npm run styles\" \"cross-env CHOKIDAR_USEPOLLING=true remix dev\"",
-    "styles": "postcss app/styles/scss --base app/styles/scss --ext css --poll --dir app/styles/css -w"
+    "build": "npm run styles:build && remix build",
+    "dev": "concurrently -n \"Styles,Remix\" -c \"#ff4eff,blue\" \"npm run styles:dev\" \"cross-env CHOKIDAR_USEPOLLING=true remix dev\"",
+    "styles:dev": "postcss app/styles/scss --base app/styles/scss --ext css --poll --dir app/styles/css -w",
+    "styles:build": "postcss app/styles/scss --base app/styles/scss --ext css --dir app/styles/css"
   },
   "dependencies": {
     "@remix-run/node": "^1.7.2",
@@ -12,6 +13,7 @@
     "@remix-run/vercel": "^1.7.2",
     "@vercel/node": "^2.4.4",
     "bootstrap": "^5.2.2",
+    "luxon": "^3.0.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",

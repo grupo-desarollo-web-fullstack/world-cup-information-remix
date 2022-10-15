@@ -8,8 +8,8 @@ const Fg = () => {
       <div className="container-wci container--fg">
         <h2 className="section__title">Fase de Grupos</h2>
         <div className="fg-container">
-          {groups.data.map((country) => (
-            <FgCard key={country.id} country={country} />
+          {groups.data.map((group) => (
+            <FgCard className="fg-card--main" key={group.id} group={group} />
           ))}
         </div>
       </div>

@@ -6,7 +6,10 @@ const LosQueNuncaLlegaron = () => {
   }, []);
   return (
     <main>
-      <article className="p-4 p-md-5 mb-4 text-bg-dark pt-1 d-flex align-items-center" style={{height:'80vh'}}>
+      <article
+        className="p-4 p-md-5 mb-4 text-bg-dark pt-1 d-flex align-items-center"
+        style={{ height: "80vh" }}
+      >
         <div className="col-md-6 px-0">
           <h1 className="display-4 fst-italic">Los que no llegaron</h1>
           <p className="lead my-3">
