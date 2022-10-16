@@ -1,4 +1,4 @@
-.simulator {
+.fixture {
   padding: calc(4rem + 4rem) 0 4rem 0;
   &-container {
     width: min(100%, 1024px);
@@ -23,7 +23,7 @@
       }
     }
   }
-  &__fixture {
+  &__matches {
     @media (min-width: 768px) {
       flex: 3;
     }

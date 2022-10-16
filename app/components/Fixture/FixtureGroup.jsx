@@ -10,7 +10,7 @@ const Fixture = ({ group, className }) => {
   useEffect(() => {
     if (
       slide.isActive &&
-      location.pathname !== `/simulator/groups/${group.attributes.slug}`
+      location.pathname !== `/fixture/groups/${group.attributes.slug}`
     ) {
       navigate(`${group.attributes.slug}`);
     }

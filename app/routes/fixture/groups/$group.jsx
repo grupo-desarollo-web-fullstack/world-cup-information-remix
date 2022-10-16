@@ -1,5 +1,6 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
+import { useEffect } from "react";
 import FixtureMatch from "~/components/Fixture/FixtureMatch";
 import fetchStrapi from "~/utils/fetchStrapi";
 
@@ -24,9 +25,13 @@ export const loader = async ({ params }) => {
 const Group = () => {
   const { fixture } = useLoaderData();
   return (
-    <div className="simulator__fixture-container">
+    <div className="fixture__matches-container">
       {fixture.data.map((match) => (
-        <FixtureMatch key={match.id} match={match.attributes} />
+        <FixtureMatch
+          onlyInfo={false}
+          key={match.id}
+          match={match.attributes}
+        />
       ))}
     </div>
   );

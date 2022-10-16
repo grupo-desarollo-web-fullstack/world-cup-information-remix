@@ -24,10 +24,10 @@ export const loader = async () => {
 
 const Groups = () => {
   return (
-    <section className="simulator">
-      <div className="simulator-container">
+    <section className="fixture">
+      <div className="fixture-container">
         <FixtureGroups />
-        <div className="simulator__fixture">
+        <div className="fixture__matches">
           <Outlet />
         </div>
       </div>

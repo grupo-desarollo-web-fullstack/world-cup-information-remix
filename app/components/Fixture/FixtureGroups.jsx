@@ -1,15 +1,15 @@
 import { useLoaderData } from "@remix-run/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SimulatorGroup from "./FixtureGroup";
+import FixtureGroup from "./FixtureGroup";
 
 const FixtureGroups = () => {
   const { groups } = useLoaderData();
   return (
-    <Swiper className="simulator__groups">
+    <Swiper className="fixture__groups">
       {groups.data.map(({ id, attributes }) => (
         <SwiperSlide key={id}>
-          <SimulatorGroup
-            className="simulator__groups__card"
+          <FixtureGroup
+            className="fixture__groups__card"
             group={{
               attributes,
             }}
